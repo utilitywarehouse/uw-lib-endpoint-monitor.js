@@ -1,9 +1,11 @@
 const axios = require('axios');
 const Emitter = require('events').EventEmitter;
-module.exports = (endpoint, {code = 200, timeout = 1500, interval = 10 } = {}) => {
-    const client = axios.create({
-        timeout: timeout
-    });
+module.exports = ({client, endpoint, code = 200, timeout = 1500, interval = 10 } = {}) => {
+    if (!client) {
+        client = axios.create({
+            timeout: timeout
+        });
+    }
 
     const emitter = new Emitter();
 
