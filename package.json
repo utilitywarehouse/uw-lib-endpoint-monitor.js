@@ -1,5 +1,5 @@
 {
-  "name": "@utilitywarehouse/uw-lib-endpoint-monitor.js)",
+  "name": "@utilitywarehouse/uw-lib-endpoint-monitor.js",
   "version": "1.0.0",
   "description": "Simple wrapper for HTTP request to monitor endpoints.",
   "main": "index.js",
