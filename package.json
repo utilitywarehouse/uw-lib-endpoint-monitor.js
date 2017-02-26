@@ -1,0 +1,15 @@
+{
+  "name": "@utilitywarehouse/uw-lib-endpoint-monitor.js)",
+  "version": "0.0.0",
+  "description": "Simple wrapper for HTTP request to monitor endpoints.",
+  "main": "index.js",
+  "repository": "git@github.com:utilitywarehouse/uw-lib-endpoint-monitor.js.git",
+  "author": "Michael Donat <michael.donat@me.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
