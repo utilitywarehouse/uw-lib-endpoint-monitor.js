@@ -10,11 +10,11 @@ module.exports = ({client, endpoint, code = 200, timeout = 1500, interval = 10 }
     const emitter = new Emitter();
 
     setInterval(() => {
-        client.get(endpoint).then(response => {
-            if (response.status !== code) {
-                throw new Error(`Expected code ${code} but ${response.status} received.`);
+        client.get(endpoint, {
+            validateStatus: function (status) {
+                return status === code;
             }
-
+        }).then(() => {
             emitter.emit('available');
         }).catch(err => {
             emitter.emit('unavailable', err);
