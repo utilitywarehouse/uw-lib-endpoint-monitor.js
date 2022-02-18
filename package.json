@@ -7,7 +7,7 @@
   "author": "Michael Donat <michael.donat@me.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.15.3"
+    "axios": "^0.26.0"
   },
   "publishConfig": {
     "access": "public"
